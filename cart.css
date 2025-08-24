@@ -1,0 +1,175 @@
+
+* {
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+
+nav {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 60px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+nav h1 img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li.cart-icon img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+nav ul li.cart-icon img:hover {
+  transform: scale(1.1);
+}
+
+
+h2 {
+  text-align: center;
+  color: #ff6600;
+  margin: 30px 0 20px 0;
+  font-size: 28px;
+}
+
+
+table {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 40px auto; 
+  border-collapse: collapse;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden; 
+  background-color: #fff;
+}
+
+th, td {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+td {
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 15px;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+tr:hover td {
+  background-color: #ffe6cc;
+}
+
+
+tr.total-row td {
+  background-color: #ffebd6;
+  font-weight: bold;
+  color: #ff6600;
+  font-size: 16px;
+}
+
+
+td a {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 0 2px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+td a[href*="add"] {
+  background: #28a745;
+  color: #fff;
+}
+
+td a[href*="remove"] {
+  background: #ffc107;
+  color: #fff;
+}
+
+td a[href*="delete"] {
+  background: #dc3545;
+  color: #fff;
+}
+
+td a:hover {
+  opacity: 0.85;
+}
+
+
+
+.checkout-button {
+    display: flex;             
+    justify-content: center;   
+    margin: 20px 0;            
+}
+
+
+.checkout-button img {
+    width: 150px;             
+    max-width: 100%;       
+    height: auto;              
+    cursor: pointer;            
+    transition: transform 0.2s ease; 
+}
+
+
+.checkout-button img:hover {
+    transform: scale(1.1);      
+}
+
+
+.total {
+    color: black;
+    font-weight: bold;
+}
+
+
+.discount {
+    color: green;
+    font-weight: bold;
+}
+
+.final {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
